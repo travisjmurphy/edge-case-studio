@@ -1,0 +1,20 @@
+{
+  "name": "edge-case-studio",
+  "version": "0.1.2",
+  "private": true,
+  "description": "Local deterministic contract QA fixtures",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test tests/core.test.cjs tests/report.test.cjs tests/cli.test.cjs tests/checkout-mcp.test.cjs",
+    "demo": "node scripts/edge-case.cjs",
+    "check-package": "node scripts/check-package.cjs"
+  },
+  "fixtureGeneratorVersion": "0.1.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travisjmurphy/edge-case-studio.git"
+  }
+}

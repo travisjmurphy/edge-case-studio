@@ -1,0 +1,14 @@
+{
+  "commands": "./commands/",
+  "description": "Generate repeatable JSON contract fixtures with one seed. Inspect passing boundaries and single-rule failures, then export JSONL for tests.",
+  "keywords": [
+    "fixtures",
+    "contract-testing",
+    "json-schema",
+    "boundary-testing"
+  ],
+  "logo": "assets/logo.svg",
+  "name": "edge-case-studio",
+  "skills": "./skills/",
+  "version": "0.1.2"
+}

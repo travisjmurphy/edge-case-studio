@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "checkout-fixtures": {
+      "command": "node",
+      "args": ["${CURSOR_PLUGIN_ROOT}/scripts/checkout-mcp.cjs"]
+    }
+  }
+}

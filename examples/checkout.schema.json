@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "orderRef",
+    "currency",
+    "lineItem",
+    "giftWrap"
+  ],
+  "properties": {
+    "orderRef": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 18
+    },
+    "currency": {
+      "type": "string",
+      "enum": [
+        "CAD",
+        "USD",
+        "EUR"
+      ]
+    },
+    "lineItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sku",
+        "quantity",
+        "unitPriceCents"
+      ],
+      "properties": {
+        "sku": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 16
+        },
+        "quantity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 99
+        },
+        "unitPriceCents": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500000
+        }
+      }
+    },
+    "giftWrap": {
+      "type": "boolean"
+    },
+    "couponCode": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 12
+    }
+  }
+}
